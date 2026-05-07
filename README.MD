@@ -2,7 +2,7 @@
   <img src="https://cdn.c4vxl.de/Agora/logo-clear.png" alt="Bot Logo" style="width: 35ch">
 </p>
 
-<h2 align="center">Agora – A Fair & Feature-Rich Discord Bot</h2>
+<h2 align="center">Agora – The Discord Bot</h2>
 
 <p align="center">
   <b>Agora</b> - a modular Discord bot for organizing communities, conversations, and shared activities.
@@ -36,20 +36,10 @@
 <br>
 
 ## What is Agora?
-**Agora** is a Discord bot focused on fairness, automation, and ease of use.
+**Agora** is a Discord bot focused on utility, automation, and ease of use.
 
 Agora takes care of standard community features. It is built around the concept of **isolated features**, each responsible for a specific part of the
 server experience (activities, tickets, channels, rules, etc.).  
-<br>
-
-## Architecture & Design
-The bot follows a **clean, modular architecture**:
-
-- Each feature is encapsulated in its own class
-- Centralized command, data and component handling
-- Shared utilities for permissions, embeds, logging, and resources
-- Clear separation between logic, data, and configuration
-
 <br>
 
 #### Where to find what:
@@ -91,7 +81,7 @@ Below is a breakdown of each option:
 
 <br>
 
-Here's a step by step guide to installing **Agora**:
+Here's a step-by-step guide to installing **Agora**:
 
 1. Download the `Agora-{version}.jar` from the [[latest release]](https://github.com/c4vxl/Agora/releases/latest) in this repository.
 2. Execute it using Java 21: `java -jar Agora-*.jar`.
@@ -99,7 +89,7 @@ Here's a step by step guide to installing **Agora**:
 <br>
 
 ## Build yourself
-To compile **Agora** youself, simply follow these steps:
+To compile **Agora** yourself, simply follow these steps:
 1. Clone this repository
 2. Build it using gradle: `./gradlew clean build`
 3. The compiled `.jar` file can be found at /build/libs/
