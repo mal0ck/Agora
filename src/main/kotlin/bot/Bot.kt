@@ -7,6 +7,7 @@ import de.c4vxl.bot.feature.game.pingpong.PingPongFeature
 import de.c4vxl.bot.feature.game.bereal.BeRealFeature
 import de.c4vxl.bot.feature.game.joke.JokeFeature
 import de.c4vxl.bot.feature.game.picture.PictureFeature
+import de.c4vxl.bot.feature.game.picture.daily.PictureOfTheDayFeature
 import de.c4vxl.bot.feature.onboarding.DefaultRoleFeature
 import de.c4vxl.bot.feature.onboarding.RulesFeature
 import de.c4vxl.bot.feature.onboarding.SelfRolesFeature
@@ -70,6 +71,7 @@ class Bot(
         registerFeature<BeRealFeature>(this)
         registerFeature<SelfRolesFeature>(this)
         registerFeature<PictureFeature>(this)
+        registerFeature<PictureOfTheDayFeature>(this)
         registerFeature<JokeFeature>(this)
         registerFeature<InactivityKickFeature>(this)
 

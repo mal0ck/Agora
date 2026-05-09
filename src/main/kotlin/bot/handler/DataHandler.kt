@@ -81,7 +81,7 @@ class DataHandler(
      * @param key The key to the data element
      * @param value The new value
      */
-    inline fun <reified T> set(key: String, value: Any) {
+    inline fun <reified T> set(key: String, value: Any?) {
         set(ClassUtils.className(T::class.java), key, value)
     }
 }

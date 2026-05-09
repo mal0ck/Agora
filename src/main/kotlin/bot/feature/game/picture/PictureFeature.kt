@@ -102,33 +102,6 @@ class PictureFeature(bot: Bot) : Feature<PictureFeature>(bot, PictureFeature::cl
                 "search" -> handleUnsplashRequest(event, *queries)
             }
         }
-
-        bot.commandHandler.registerSlashCommand(
-            Commands.slash("picture-of-the-day", bot.language.translate("feature.picture_of_the_day.command.desc"))
-                .setDefaultPermissions(DefaultMemberPermissions.enabledFor(net.dv8tion.jda.api.Permission.ADMINISTRATOR))
-                .addSubcommands(
-                    SubcommandData("trigger", bot.language.translate("feature.picture_of_the_day.command.trigger.desc"))
-                )
-        ) { event ->
-            when (event.subcommandName) {
-                "trigger" -> {
-                    // Trigger
-                    val success = handler.sendPicOfTheDay()
-
-                    if (!success) event.replyEmbeds(
-                        Embeds.FAILURE(bot)
-                            .setDescription(bot.language.translate("feature.picture_of_the_day.command.trigger.failure"))
-                            .build()
-                    ).setEphemeral(true).queue()
-                    else
-                        event.replyEmbeds(
-                            Embeds.SUCCESS(bot)
-                                .setDescription(bot.language.translate("feature.picture_of_the_day.command.trigger.success"))
-                                .build()
-                        ).setEphemeral(true).queue()
-                }
-            }
-        }
     }
 
     /**
