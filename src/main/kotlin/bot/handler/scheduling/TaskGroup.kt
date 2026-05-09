@@ -1,4 +1,4 @@
-package de.c4vxl.bot.handler.global.scheduling
+package de.c4vxl.bot.handler.scheduling
 
 import net.dv8tion.jda.api.entities.Guild
 import java.time.Duration

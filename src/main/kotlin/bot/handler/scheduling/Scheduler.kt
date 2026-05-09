@@ -1,4 +1,4 @@
-package de.c4vxl.bot.handler.global.scheduling
+package de.c4vxl.bot.handler.scheduling
 
 import java.util.concurrent.Executors
 import java.util.concurrent.ScheduledExecutorService

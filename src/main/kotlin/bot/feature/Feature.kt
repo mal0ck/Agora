@@ -1,7 +1,7 @@
 package de.c4vxl.bot.feature
 
 import de.c4vxl.bot.Bot
-import de.c4vxl.bot.handler.global.scheduling.TaskGroup
+import de.c4vxl.bot.handler.scheduling.TaskGroup
 import de.c4vxl.utils.ClassUtils.className
 import de.c4vxl.utils.LoggerUtils.createLogger
 import org.slf4j.Logger
